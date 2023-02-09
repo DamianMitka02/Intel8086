@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" type="text/javascript" defer></script>
+    <title>Intel 8086</title>
+</head>
+
+<body>
+
+    <div class="Contaier">
+        <div class="Main">
+            <h1 class="header">INTEL 8086</h1>
+            <div class="register-box">
+                <div class="register-content">
+                    AL:
+                    <input type="text" name="register-value" class="registerValue" maxlength="2" minlength="2"
+                        required="true" id="registerInput1" />
+                </div>
+                <div class="register-content">
+                    AH:
+                    <input type="text" name="register-value" class="registerValue" maxlength="2" minlength="2"
+                        required="true" id="registerInput2" />
+                </div>
+                <div class="register-content">
+                    BL:
+                    <input type="text" name="register-value" class="registerValue" maxlength="2" minlength="2"
+                        required="true" id="registerInput3" />
+                </div>
+                <div class="register-content">
+                    BH:
+                    <input type="text" name="register-value" class="registerValue" maxlength="2" minlength="2"
+                        required="true" id="registerInput4" />
+                </div>
+                <div class="register-content">
+                    CL:
+                    <input type="text" name="register-value" class="registerValue" maxlength="2" minlength="2"
+                        required="true" id="registerInput5" />
+                </div>
+                <div class="register-content">
+                    CH:
+                    <input type="text" name="register-value" class="registerValue" maxlength="2" minlength="2"
+                        required="true" id="registerInput6" />
+                </div>
+                <div class="register-content">
+                    DL:
+                    <input type="text" name="register-value" class="registerValue" maxlength="2" minlength="2"
+                        required="true" id="registerInput7" />
+                </div>
+                <div class="register-content">
+                    DH:
+                    <input type="text" name="register-value" class="registerValue" maxlength="2" minlength="2"
+                        required="true" id="registerInput8" />
+                </div>
+
+
+                <br />
+            </div>
+
+            <br />
+
+
+            <div class="actions-box">
+                <h1 class="header">DZIAŁANIA: </h1>
+                <div class="actions-content">
+                    <input type="button" value="MOV" disabled class="MOV actionButton" />
+                </div>
+                <div class="actions-content">
+                    <input type="button" value="XCHG" disabled class="XCHG actionButton" />
+                </div>
+                <div class="actions-content">
+                    <input type="button" value="NOT" disabled class="NOT actionButton" />
+                </div>
+                <div class="actions-content">
+                    <input type="button" value="INC" disabled class="INC actionButton" />
+                </div>
+                <div class="actions-content">
+                    <input type="button" value="DEC" disabled class="DEC actionButton" />
+                </div>
+                <div class="actions-content">
+                    <input type="button" value="AND" disabled class="AND actionButton" />
+                </div>
+                <div class="actions-content">
+                    <input type="button" value="OR" disabled class="OR actionButton" />
+                </div>
+                <div class="actions-content">
+                    <input type="button" value="XOR" disabled class="XOR actionButton" />
+                </div>
+                <div class="actions-content">
+                    <input type="button" value="ADD" disabled class="ADD actionButton" />
+                </div>
+                <div class="actions-content">
+                    <input type="button" value="SUB" disabled class="SUB actionButton" />
+                </div>
+            </div>
+            <div class="operation">
+                <h1 class="header">OPERACJE: </h1>
+                <div class="operation-select">
+                    <select id="select1" class="displaySelect">
+                        <option value="#registerInput1">AL</option>
+                        <option value="#registerInput2">AH</option>
+                        <option value="#registerInput3">BL</option>
+                        <option value="#registerInput4">BH</option>
+                        <option value="#registerInput5">CL</option>
+                        <option value="#registerInput6">CH</option>
+                        <option value="#registerInput7">DL</option>
+                        <option value="#registerInput8">DH</option>
+                    </select>
+                </div>
+                <div class="operation-select">
+                    <select id="select2" class="nextSelect">
+                        <option value="#registerInput1">AL</option>
+                        <option value="#registerInput2">AH</option>
+                        <option value="#registerInput3">BL</option>
+                        <option value="#registerInput4">BH</option>
+                        <option value="#registerInput5">CL</option>
+                        <option value="#registerInput6">CH</option>
+                        <option value="#registerInput7">DL</option>
+                        <option value="#registerInput8">DH</option>
+                    </select>
+                </div>
+                <br />
+                <span id="error1" class="error"></span>
+            </div>
+            <br />
+            <input type="button" value="Zatwierdź" class="send" />
+        </div>
+    </div>
+</body>
+
+</html>
